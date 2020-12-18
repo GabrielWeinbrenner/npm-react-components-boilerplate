@@ -6,10 +6,13 @@ function getRandColor(){
   return `#${r}${g}${b}`
 }
 function hello(){
-  [color, setColor] = useState('#000000');
+  // [color, setColor] = useState('#000000');
   return(
-    <div onClick={() => setColor(getRandColor())}>
-      <h1 style={{color: color}}>Hello</h1>
+    // <div onClick={() => setColor(getRandColor())}>
+      // <h1 style={{color: color}}>Hello</h1>
+    // </div>
+    <div>
+      <h1>Hello</h1>
     </div>
   )
 }
