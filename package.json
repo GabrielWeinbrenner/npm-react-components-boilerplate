@@ -1,6 +1,6 @@
 {
   "name": "npm-react-components-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Boilerplate for npm react components",
   "author": "hogo",
   "license": "Apache-2.0",
@@ -14,7 +14,9 @@
     "build": "rollup -c",
     "start": "rollup -c -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rollup-plugin-jsx": "^1.0.3"
+  },
   "peerDependencies": {
     "react": ">= 16.8.0 < 2",
     "react-dom": ">= 16.8.0 < 2"

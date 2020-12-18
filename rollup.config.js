@@ -1,5 +1,5 @@
 import sass from 'rollup-plugin-sass'
-import typescript from 'rollup-plugin-typescript2'
+import jsx from 'rollup-plugin-jsx'
 
 import pkg from './package.json'
 
@@ -14,6 +14,6 @@ export default {
       strict: false
     }
   ],
-  plugins: [sass({ insert: true }), typescript()],
+  plugins: [sass({ insert: true }), jsx({factory: "React.createElement"})],
   external: ['react', 'react-dom']
 }
